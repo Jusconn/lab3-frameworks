@@ -1,0 +1,11 @@
+{
+  "name": "Lab 3",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "ms-vsliveshare.vsliveshare",
+    "ms-vscode.live-server",
+    "dbaeumer.vscode-eslint", 
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ],
+  "postCreateCommand": "npm init -y && npm install react react-dom"
+}
