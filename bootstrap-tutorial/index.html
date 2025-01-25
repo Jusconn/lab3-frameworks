@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Task Manager</title>
+        <meta charset="utf-8">
 
+        <!-- 
+            TO-DO: Include Bootstrap 5 and the <meta> tag for proper rendering/touch zooming.
+        -->
+
+    </head>
+
+    <body>
+
+        <!--
+            TO-DO: Create a fixed container to hold ALL content of the page. 
+                   Set its top margin to size 3.
+        -->
+
+        <h1>Task Manager</h1>
+        <br />
+
+
+        <!--
+            TO-DO: Turn the nav menu into toggleable navigation pills. 
+                   Make the "Add Task" tab active by default.
+        -->
+        <ul>
+            <li><a href="#add">Add Task</a></li>
+            <li><a href="#tasks">Task List</a></li>
+        </ul>
+
+        
+        <!--
+            TO-DO: Create a div that wraps BOTH tabs and their content inside it.
+                   Add tab panes for each tab.
+                   Make the "Add Task" tab active by default.
+                   Make the "Task List" tab fade in and out when clicked.
+        -->
+        <div id="add">
+            <br />
+
+            <!-- TO-DO: Use this div to create a basic card. Set its top margin to size 4. -->
+            <div>
+
+                <!-- TO-DO: Make this div the card heading. Change its background and text color. -->
+                <div>Add Task</div>
+
+                <!-- TO-DO: Make this div the card body. -->
+                <div>
+                    <form id="taskForm">
+                        <div class="mb-3">
+
+                            <!-- TO-DO: Create a stacked form with proper form styling and correct padding. -->
+                            <label for="taskName">Task Name</label>
+                            <input type="text" id="taskName" required>
+
+                        </div>
+                        <div class="mb-3">
+
+                            <!-- TO-DO: Create a stacked form with proper form styling and correct padding. -->
+                            <label for="taskDescription">Task Description</label>
+                            <textarea id="taskDescription" rows="3" required></textarea>
+
+                        </div>
+
+                        <!-- TO-DO: Style the submit button. -->
+                        <button type="submit">Add Task</button>
+                    </form>
+                </div>
+            </div>     
+        </div>
+
+        <div id="tasks">
+            <br />
+
+            <!-- TO-DO: Use this div to create a basic card. Set its top margin to size 4. -->
+            <div>
+
+                <!-- TO-DO: Make this div the card heading. Change its background and text color. -->
+                <div>Task List</div>
+
+                <!-- TO-DO: Make this div the card body. -->
+                <div>
+
+                    <!-- TO-DO: Style the table. -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Task Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="taskList">
+                            <!-- Tasks will be dynamically added here. -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/add.js"></script>
+
+    </body>
+</html>
