@@ -1,5 +1,11 @@
 {
-  "name": "Lab 3",
+  "name": "Lab 3 - React",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
   "extensions": [
     "esbenp.prettier-vscode",
     "ms-vsliveshare.vsliveshare",
@@ -7,5 +13,18 @@
     "dbaeumer.vscode-eslint", 
     "ms-vscode.vscode-typescript-tslint-plugin"
   ],
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install -g create-vite",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
 }
+
